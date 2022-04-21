@@ -5,9 +5,29 @@
 <table>
   <thead>
     <tr>
-      <th>Itemname</th>
-      <th>Itemlocation</th>
-      <th>Itemdesc</th>
+      <th>Item</th>
+      <th>Item ID</th>
+      <th>Brand</th>
+      <th>Listing Title</th>
+      <th>Purchase Date</th>
+      <th>List Date</th>
+      <th>COG</th>
+      <th>Est Sell Price</th>
+      <th>Est Ship Charge</th>
+      <th>Est Ship Cost</th>
+      <th>Est Sales Tax (7.8%)</th>
+      <th>Total For Fees</th>
+      <th>Total Fees</th>
+      <th>Est Profit</th>
+      <th>Sell Date</th>
+      <th>Sold Price</th>
+      <th>Ship Charge</th>
+      <th>Ship Cost</th>
+      <th>Final Fees</th>
+      <th>Profit</th>
+      <th>Weight</th>
+      <th>Size</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,7 +37,27 @@
       <tr>
         <td><%= item.itemName %></td>
         <td><%= item.itemLocation %></td>
+        <td><%= item.itemBrand %></td>
         <td><%= item.itemDesc %></td>
+        <td><%= item.buyDate %></td>
+        <td><%= item.listDate %></td>
+        <td><%= item.COG %></td>
+        <td><%= item.sellPrice %></td>
+        <td><%= item.estShipCharge %></td>
+        <td><%= item.estShipCost %></td>
+        <td><%= item.estSalesTax %></td>
+        <td><%= item.totalForFees %></td>
+        <td><%= item.sellFees %></td>
+        <td><%= item.estProfit %></td>
+        <td><%= item.sellDate %></td>
+        <td><%= item.soldPrice %></td>
+        <td><%= item.shipCharge %></td>
+        <td><%= item.shipCost %></td>
+        <td><%= item.finalFees %></td>
+        <td><%= item.profit %></td>
+        <td><%= item.weight %></td>
+        <td><%= item.size %></td>
+
         <td><%= link_to 'Show', item %></td>
         <td><%= link_to 'Edit', edit_item_path(item) %></td>
         <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>

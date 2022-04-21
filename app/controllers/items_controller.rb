@@ -65,6 +65,32 @@ class ItemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def item_params
-      params.require(:item).permit(:itemName, :itemLocation, :itemDesc, :buyDate, :postDate, :sellDate, :weight, :size, :COG, :extraFees, :sellPrice, :estShipCharge, :estShipCost, :estSalesTax, :totalForFees, :sellFees, :estProfit, :shipCharge, :shipCost, :finalFees, :profit, :adjProfit )
+      params.require(:item).permit(:itemName,
+                                  :itemBrand,
+                                  :itemLocation, 
+                                  :itemDesc, 
+                                  :buyDate, 
+                                  :listDate, 
+                                  :sellDate, 
+                                  :weight, 
+                                  :size, 
+                                  :COG, 
+                                  :extraFees, 
+                                  :sellPrice, 
+                                  :estShipCharge, 
+                                  :estShipCost, 
+                                  :estSalesTax, 
+                                  :totalForFees, 
+                                  :sellFees, 
+                                  :estProfit, 
+                                  :shipCharge, 
+                                  :shipCost, 
+                                  :finalFees, 
+                                  :soldPrice, 
+                                  :profit, 
+                                  :adjProfit, 
+                                  :posted, 
+                                  :sold, 
+                                  :writeOff )
     end
 end
