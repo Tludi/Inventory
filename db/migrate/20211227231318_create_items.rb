@@ -29,6 +29,7 @@ class CreateItems < ActiveRecord::Migration[6.1]
       t.binary :sold
       t.binary :writeOff
 
+
       t.timestamps
     end
   end
